@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.membersmapstatistics.FlowsActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/send_flow_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/send_flow_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+        <include layout="@layout/flow_step_bar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--
+    <include layout="@layout/content_flows" />
+    -->
+    <FrameLayout
+        android:id="@+id/flow_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </FrameLayout>
+    <!--
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flow_map_gender_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_min"
+        android:layout_marginBottom="128dp"
+        android:src="@drawable/ic_pie_chart_white_24px"
+        app:backgroundTint="@android:color/holo_purple"
+        app:fabSize="mini"/>
+        -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flow_map_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_min"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_bubble_chart_white_24px"
+        app:backgroundTint="@android:color/holo_purple"
+        app:fabSize="mini"/>
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flow_step_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_arrow_forward_white_24px" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coupon_bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:id="@+id/dialog_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_grey_500"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="XXXX"
+                android:textSize="14pt"
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_clear_white_24px"
+                android:layout_marginRight="8dp"/>
+            <include layout="@layout/cardview_coupon" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/dialog_exDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pls input start Date and End Date"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/dialog_startDateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx/xx/xx"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/white"
+                android:background="@color/blue_grey_500"
+                style="?android:attr/buttonBarButtonStyle"/>
+            <Button
+                android:id="@+id/dialog_endDateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx/xx/xx"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@android:color/white"
+                android:background="@color/blue_grey_500"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/dialog_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titile"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:drawableLeft="@drawable/ic_store_black_48px"/>
+        <TextView
+            android:id="@+id/dialog_price_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:drawableLeft="@drawable/ic_store_black_48px"/>
+        <TextView
+            android:id="@+id/dialog_discount_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:drawableLeft="@drawable/ic_store_black_48px"/>
+        <TextView
+            android:id="@+id/dialog_caption_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caption"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:drawableLeft="@drawable/ic_store_black_48px"/>
+
+        <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:id="@+id/dialog_caption_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<EditText-->
+                <!--android:id="@+id/dialog_caption_edit"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Pls input caption"/>-->
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

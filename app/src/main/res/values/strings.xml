@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MembersMapStatistics</string>
+    <string name="todo">TODO</string>
+    <item name="fab_status" type="id"/>
+    <string name="flyer_photo_path" translatable="false">flyerPhoto</string>
+    <string name="coupon_price_default" translatable="false">1000</string>
+    <string name="coupon_discount_default" translatable="false">10</string>
+</resources>
